@@ -5,10 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Amazing Mountain</title>
   </head>
   <body>
-    Hello Abdallah
+    <header class="header">
+      <img src="imges/logo.svg" alt="Amazing Mountain" class="logo" />
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__link">SKI</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">GOLF</a></li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">HIKING</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="weather">
+        <div class="weather__icon">
+          <img src="imges/15 Weather.svg" alt="weather-icon" />
+        </div>
+        <p class="weather__info">
+          current weather <span class="weather__ratings">-6°C</span>
+        </p>
+        <p class="weather__info">
+          recent snowfall <span class="weather__ratings">35cm</span>
+        </p>
+      </div>
+    </header>
+    <main class="main main-ski">
+      <h1 class="main__title"></h1>
+      <p class="main__intro"></p>
+      <a href="#" class="btn btn-primary"></a>
+      <a href="#" class="btn btn-outline"></a>
+    </main>
   </body>
 </html>
