@@ -1,21 +1,55 @@
 // Logo
 .logo {
+  height: 2.1rem;
+  border-bottom: $border-light;
+  width: 100%;
+  padding: 0.5rem;
+
+  background-color: $color-light;
+
+  // Test
+  background-color: red;
 }
 
 // Nav-bar
-nav {
+.nav {
+  width: 100%;
+
   &__list {
+    list-style: none;
+    color: $color-dark;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-around;
+
+    // Test
+    background-color: green;
+
     &-item {
     }
   }
 
   &__link {
+    color: $color-light;
+    text-decoration: none;
   }
 }
 
 // Weather
 .weather {
+  display: flex;
+  width: 100%;
+
+  // Test
+  background-color: yellow;
+
   &__icon {
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
   }
 
   &__info {

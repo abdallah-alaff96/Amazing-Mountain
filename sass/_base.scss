@@ -13,10 +13,16 @@ $fw-light: 400;
 $fw-normal: 700;
 $fw-dark: 900;
 
+// Border
+$border-dark: 1px solid $color-dark;
+$border-light: 1px solid $color-gray;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
