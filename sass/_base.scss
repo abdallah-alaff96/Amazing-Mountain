@@ -1,5 +1,27 @@
-// font-family: 'Work Sans', sans-serif;
+// Colors
+$color-primary: #f70058;
+$color-light: #fff;
+$color-gray: #3a3a3a;
+$color-dark: #0c0e36;
+
+// Fonts
+$font-worksans: "Work Sans", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+
+// Font-Weight
+$fw-light: 400;
+$fw-normal: 700;
+$fw-dark: 900;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #fff;
+  font-family: $font-worksans;
+  font-size: 1.125rem;
+  color: $color-dark;
+  line-height: 1.6;
 }
