@@ -2,7 +2,6 @@
 .header {
   & > * {
     align-self: stretch;
-    padding: 0.8rem 0;
     letter-spacing: 1px;
     border-bottom: $border-light;
   }
@@ -11,6 +10,7 @@
 // Logo
 .logo {
   height: 2.6rem;
+  padding: 0.8rem 0;
   background-color: $color-light;
 }
 
@@ -28,6 +28,21 @@
     justify-content: space-around;
 
     &-item {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 1rem;
+      flex: 1;
+      transition: all 0.3s;
+    }
+
+    &-item:hover {
+      background-color: $color-grey-light-2;
+    }
+
+    &-item:active {
+      background-color: $color-gray;
+      // color: $color-light;
     }
   }
 
@@ -35,6 +50,11 @@
     font-weight: $fw-normal;
     color: $color-dark;
     text-decoration: none;
+    transition: all 0.3s;
+
+    &:active {
+      color: $color-light;
+    }
   }
 }
 
@@ -88,8 +108,8 @@
     position: absolute;
     bottom: 0;
     left: 0.5rem;
-    border-top: $border-red;
-    opacity: 0.3;
+    border-top: $border-light;
+    opacity: 0.2;
     width: calc(100% - 1rem);
   }
 
