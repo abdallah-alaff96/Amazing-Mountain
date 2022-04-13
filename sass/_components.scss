@@ -123,21 +123,59 @@
 
 // Main
 .main {
+  padding: 3rem 1rem 10rem;
+
   &-ski {
+    background-image: url(../imges/background.jpg);
+    background-size: cover;
   }
 
   &__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: $fw-dark;
   }
 
   &__intro {
+    line-height: 1.5625rem;
+    margin-bottom: 2rem;
   }
 }
 
 // Button
 .btn {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: $fw-normal;
+  margin-bottom: 0.75rem;
+
+  display: inline-block;
+
   &-primary {
+    color: $color-light;
+    background-color: $color-primary;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-light;
+      color: $color-primary;
+    }
   }
 
   &-outline {
+    color: $color-primary;
+    background-color: $color-light;
+    transition: all 0.3s;
+    border: 3px solid $color-primary;
+
+    &:hover {
+      color: $color-light;
+      background-color: $color-dark;
+      border-color: $color-dark;
+    }
   }
 }
