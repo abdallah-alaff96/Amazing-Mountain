@@ -170,12 +170,17 @@
     color: $color-primary;
     background-color: $color-light;
     transition: all 0.3s;
-    border: 3px solid $color-primary;
+
+    //outline insead of border
+    outline: 3px solid $color-primary;
+    outline-offset: -3px;
 
     &:hover {
       color: $color-light;
       background-color: $color-dark;
-      border-color: $color-dark;
+
+      // outline-color
+      outline-color: $color-dark;
     }
   }
 }
