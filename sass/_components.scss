@@ -1,55 +1,72 @@
+// header
+.header {
+  & > * {
+    align-self: stretch;
+    padding: 0.8rem 0;
+    letter-spacing: 1px;
+    border-bottom: $border-light;
+  }
+}
+
 // Logo
 .logo {
-  height: 2.1rem;
-  border-bottom: $border-light;
-  width: 100%;
-  padding: 0.5rem;
-
+  height: 2.6rem;
   background-color: $color-light;
-
-  // Test
-  background-color: red;
 }
 
 // Nav-bar
 .nav {
-  width: 100%;
+  background-color: $color-light;
+  font-family: $font-roboto;
+  font-size: 0.875rem;
 
   &__list {
     list-style: none;
     color: $color-dark;
-    padding: 0.5rem 0;
-    letter-spacing: 1px;
+
     display: flex;
     justify-content: space-around;
-
-    // Test
-    background-color: green;
 
     &-item {
     }
   }
 
   &__link {
-    color: $color-light;
+    font-weight: $fw-normal;
+    color: $color-dark;
     text-decoration: none;
   }
 }
 
 // Weather
 .weather {
+  background-color: rebeccapurple;
   display: flex;
-  width: 100%;
+  // padding: 0;
 
-  // Test
-  background-color: yellow;
+  & > * {
+    align-self: stretch;
+  }
 
   &__icon {
+    background-color: $color-primary;
+
+    display: flex;
+    flex-basis: 20%;
+
+    img {
+      height: 3rem;
+    }
   }
 
   &__text {
+    background-color: $color-dark;
+    color: $color-light;
+
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    flex-basis: 80%;
   }
 
   &__info {

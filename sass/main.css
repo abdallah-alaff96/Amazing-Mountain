@@ -14,46 +14,71 @@ body {
   line-height: 1.6;
 }
 
+.header > * {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  padding: 0.8rem 0;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f4f2f2;
+}
+
 .logo {
-  height: 2.1rem;
-  border-bottom: 1px solid #3a3a3a;
-  width: 100%;
-  padding: 0.5rem;
+  height: 2.6rem;
   background-color: #fff;
-  background-color: red;
 }
 
 .nav {
-  width: 100%;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
 }
 
 .nav__list {
   list-style: none;
   color: #0c0e36;
-  padding: 0.5rem 0;
-  letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: green;
 }
 
 .nav__link {
-  color: #fff;
+  font-weight: 700;
+  color: #0c0e36;
   text-decoration: none;
 }
 
 .weather {
+  background-color: rebeccapurple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  background-color: yellow;
+}
+
+.weather > * {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.weather__icon {
+  background-color: #f70058;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.weather__icon img {
+  height: 3rem;
 }
 
 .weather__text {
+  background-color: #0c0e36;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,9 +86,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 
-.header {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

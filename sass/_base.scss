@@ -3,6 +3,7 @@ $color-primary: #f70058;
 $color-light: #fff;
 $color-gray: #3a3a3a;
 $color-dark: #0c0e36;
+$color-grey-light-2: #f4f2f2;
 
 // Fonts
 $font-worksans: "Work Sans", sans-serif;
@@ -14,8 +15,8 @@ $fw-normal: 700;
 $fw-dark: 900;
 
 // Border
-$border-dark: 1px solid $color-dark;
-$border-light: 1px solid $color-gray;
+$border-dark: 0.5px solid $color-dark;
+$border-light: 1px solid $color-grey-light-2;
 
 *,
 *::before,
