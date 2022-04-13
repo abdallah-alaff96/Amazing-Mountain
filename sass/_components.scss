@@ -40,39 +40,64 @@
 
 // Weather
 .weather {
-  background-color: rebeccapurple;
+  background-color: green;
+  padding: 0;
   display: flex;
-  // padding: 0;
+  text-align: center;
 
   & > * {
-    align-self: stretch;
+    padding: 0.1rem 0;
   }
 
   &__icon {
     background-color: $color-primary;
-
     display: flex;
-    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
 
     img {
-      height: 3rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 
   &__text {
     background-color: $color-dark;
     color: $color-light;
-
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    flex-basis: 80%;
+    justify-content: center;
+    flex-basis: 75%;
   }
 
   &__info {
+    display: flex;
+    line-height: 2.3;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: $font-roboto;
+    font-weight: $fw-dark;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  &__info:first-of-type::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    border-top: $border-red;
+    opacity: 0.3;
+    width: calc(100% - 1rem);
   }
 
   &__ratings {
+    margin-left: auto;
+    padding-right: 1rem;
+    text-transform: lowercase;
+    color: $color-light;
   }
 }
 
