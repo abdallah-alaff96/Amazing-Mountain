@@ -73,6 +73,18 @@ h4 {
   }
 }
 
+@media only screen and (min-width: 64.0625rem) {
+  .nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    margin-left: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .nav__list {
   list-style: none;
   color: #0c0e36;
@@ -147,6 +159,14 @@ h4 {
   text-align: center;
 }
 
+@media only screen and (min-width: 64.0625rem) {
+  .weather {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 23%;
+            flex: 0 0 23%;
+  }
+}
+
 .weather > * {
   padding: 0.1rem 0;
 }
@@ -174,6 +194,13 @@ h4 {
 @media only screen and (min-width: 48.0625rem) {
   .weather__icon img {
     padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 64.0625rem) {
+  .weather__icon img {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 
@@ -226,6 +253,13 @@ h4 {
   }
 }
 
+@media only screen and (min-width: 64.0625rem) {
+  .weather__info {
+    line-height: 4;
+    font-size: 0.6rem;
+  }
+}
+
 .weather__info:first-of-type::after {
   content: "";
   position: absolute;
@@ -266,9 +300,21 @@ h4 {
   }
 }
 
+@media only screen and (min-width: 64.0625rem) {
+  .main {
+    padding: 5rem 18rem 50rem 6rem;
+  }
+}
+
 .main-ski {
   background-image: url(../imges/background.jpg);
   background-size: cover;
+}
+
+@media only screen and (min-width: 64.0625rem) {
+  .main-ski {
+    background-position: right center;
+  }
 }
 
 .main__title {
@@ -300,6 +346,12 @@ h4 {
   display: inline-block;
 }
 
+@media only screen and (min-width: 64.0625rem) {
+  .btn {
+    margin-right: 1rem;
+  }
+}
+
 .btn-primary {
   color: #fff;
   background-color: #f70058;
@@ -317,6 +369,7 @@ h4 {
   background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: 900;
   outline: 3px solid #f70058;
   outline-offset: -3px;
 }

@@ -38,6 +38,12 @@
     flex: 1;
   }
 
+  @media only screen and (min-width: $media-labtop-medium) {
+    flex: 0 0 30%;
+    margin-left: auto;
+    align-self: center;
+  }
+
   &__list {
     list-style: none;
     color: $color-dark;
@@ -94,6 +100,10 @@
   display: flex;
   text-align: center;
 
+  @media only screen and (min-width: $media-labtop-medium) {
+    flex: 0 0 23%;
+  }
+
   & > * {
     padding: 0.1rem 0;
   }
@@ -111,6 +121,11 @@
 
       @media only screen and (min-width: $media-labtop) {
         padding: 0.5rem;
+      }
+
+      @media only screen and (min-width: $media-labtop-medium) {
+        width: 4.5rem;
+        height: 4.5rem;
       }
     }
   }
@@ -144,6 +159,11 @@
       font-size: 0.5rem;
       padding-left: 0.5rem;
       line-height: 3;
+    }
+
+    @media only screen and (min-width: $media-labtop-medium) {
+      line-height: 4;
+      font-size: 0.6rem;
     }
   }
 
@@ -181,9 +201,17 @@
     padding: 4rem 6rem 20rem;
   }
 
+  @media only screen and (min-width: $media-labtop-medium) {
+    padding: 5rem 18rem 50rem 6rem;
+  }
+
   &-ski {
     background-image: url(../imges/background.jpg);
     background-size: cover;
+
+    @media only screen and (min-width: $media-labtop-medium) {
+      background-position: right center;
+    }
   }
 
   &__title {
@@ -212,8 +240,11 @@
   text-transform: uppercase;
   font-weight: $fw-normal;
   margin-bottom: 0.75rem;
-
   display: inline-block;
+
+  @media only screen and (min-width: $media-labtop-medium) {
+    margin-right: 1rem;
+  }
 
   &-primary {
     color: $color-light;
@@ -230,6 +261,7 @@
     color: $color-primary;
     background-color: $color-light;
     transition: all 0.3s;
+    font-weight: $fw-dark;
 
     //outline insead of border
     outline: 3px solid $color-primary;
