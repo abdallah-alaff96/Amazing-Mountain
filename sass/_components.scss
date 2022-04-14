@@ -1,9 +1,18 @@
 // header
 .header {
+  @media only screen and (min-width: $media-labtop) {
+    border-bottom: $border-light;
+    justify-content: space-between;
+  }
+
   & > * {
     align-self: stretch;
     letter-spacing: 1px;
     border-bottom: $border-light;
+
+    @media only screen and (min-width: $media-labtop) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -12,6 +21,11 @@
   height: 2.6rem;
   padding: 0.8rem 0;
   background-color: $color-light;
+
+  @media only screen and (min-width: $media-labtop) {
+    margin-left: 6rem;
+    align-self: center;
+  }
 }
 
 // Nav-bar
@@ -20,12 +34,20 @@
   font-family: $font-roboto;
   font-size: 0.875rem;
 
+  @media only screen and (min-width: $media-labtop) {
+    flex: 1;
+  }
+
   &__list {
     list-style: none;
     color: $color-dark;
 
     display: flex;
     justify-content: space-around;
+
+    @media only screen and (min-width: $media-labtop) {
+      flex: 1;
+    }
 
     &-item {
       cursor: pointer;
@@ -34,6 +56,10 @@
       padding: 1rem 1rem;
       flex: 1;
       transition: all 0.3s;
+
+      @media only screen and (min-width: $media-labtop) {
+        padding: 1rem 0.7rem;
+      }
     }
 
     &-item:hover {
@@ -42,7 +68,6 @@
 
     &-item:active {
       background-color: $color-gray;
-      // color: $color-light;
     }
   }
 
@@ -52,6 +77,11 @@
     text-decoration: none;
     transition: all 0.3s;
 
+    @media only screen and (min-width: $media-labtop) {
+      line-height: 2;
+      font-weight: $fw-light;
+    }
+
     &:active {
       color: $color-light;
     }
@@ -60,7 +90,6 @@
 
 // Weather
 .weather {
-  background-color: green;
   padding: 0;
   display: flex;
   text-align: center;
@@ -79,6 +108,10 @@
     img {
       width: 3.5rem;
       height: 3.5rem;
+
+      @media only screen and (min-width: $media-labtop) {
+        padding: 0.5rem;
+      }
     }
   }
 
@@ -101,6 +134,17 @@
     color: rgba(255, 255, 255, 0.7);
     padding-left: 1rem;
     position: relative;
+
+    @media only screen and (min-width: $media-tablet) {
+      padding-left: 0;
+      justify-content: center;
+      font-weight: $fw-light;
+    }
+    @media only screen and (min-width: $media-labtop) {
+      font-size: 0.5rem;
+      padding-left: 0.5rem;
+      line-height: 3;
+    }
   }
 
   &__info:first-of-type::after {
@@ -118,12 +162,24 @@
     padding-right: 1rem;
     text-transform: lowercase;
     color: $color-light;
+
+    @media only screen and (min-width: $media-tablet) {
+      margin-left: 2rem;
+    }
+    @media only screen and (min-width: $media-labtop) {
+      margin-left: 0.7rem;
+      padding-right: 0.5rem;
+    }
   }
 }
 
 // Main
 .main {
   padding: 3rem 1rem 10rem;
+
+  @media only screen and (min-width: $media-labtop) {
+    padding: 4rem 6rem 20rem;
+  }
 
   &-ski {
     background-image: url(../imges/background.jpg);
@@ -139,6 +195,10 @@
   &__intro {
     line-height: 1.5625rem;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $media-labtop) {
+      margin-bottom: 6rem;
+    }
   }
 }
 

@@ -21,6 +21,15 @@ h4 {
   line-height: 1;
 }
 
+@media only screen and (min-width: 48.0625rem) {
+  .header {
+    border-bottom: 1px solid #f4f2f2;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .header > * {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -29,16 +38,39 @@ h4 {
   border-bottom: 1px solid #f4f2f2;
 }
 
+@media only screen and (min-width: 48.0625rem) {
+  .header > * {
+    border-bottom: none;
+  }
+}
+
 .logo {
   height: 2.6rem;
   padding: 0.8rem 0;
   background-color: #fff;
 }
 
+@media only screen and (min-width: 48.0625rem) {
+  .logo {
+    margin-left: 6rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .nav {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .nav__list {
@@ -49,6 +81,14 @@ h4 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .nav__list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .nav__list-item {
@@ -64,6 +104,12 @@ h4 {
           flex: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .nav__list-item {
+    padding: 1rem 0.7rem;
+  }
 }
 
 .nav__list-item:hover {
@@ -82,12 +128,18 @@ h4 {
   transition: all 0.3s;
 }
 
+@media only screen and (min-width: 48.0625rem) {
+  .nav__link {
+    line-height: 2;
+    font-weight: 400;
+  }
+}
+
 .nav__link:active {
   color: #fff;
 }
 
 .weather {
-  background-color: green;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +169,12 @@ h4 {
 .weather__icon img {
   width: 3.5rem;
   height: 3.5rem;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .weather__icon img {
+    padding: 0.5rem;
+  }
 }
 
 .weather__text {
@@ -150,6 +208,24 @@ h4 {
   position: relative;
 }
 
+@media only screen and (min-width: 29.6875rem) {
+  .weather__info {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .weather__info {
+    font-size: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 3;
+  }
+}
+
 .weather__info:first-of-type::after {
   content: "";
   position: absolute;
@@ -167,8 +243,27 @@ h4 {
   color: #fff;
 }
 
+@media only screen and (min-width: 29.6875rem) {
+  .weather__ratings {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .weather__ratings {
+    margin-left: 0.7rem;
+    padding-right: 0.5rem;
+  }
+}
+
 .main {
   padding: 3rem 1rem 10rem;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .main {
+    padding: 4rem 6rem 20rem;
+  }
 }
 
 .main-ski {
@@ -185,6 +280,12 @@ h4 {
 .main__intro {
   line-height: 1.5625rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  .main__intro {
+    margin-bottom: 6rem;
+  }
 }
 
 .btn {
@@ -237,5 +338,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 48.0625rem) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
