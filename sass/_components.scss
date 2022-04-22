@@ -61,14 +61,16 @@
       justify-content: space-around;
       padding: 1rem 1rem;
       flex: 1;
-      transition: all 0.3s;
+      transition: all 0.5s;
 
       @media only screen and (min-width: $media-labtop) {
         padding: 1rem 0.7rem;
+        margin-right: 0.5rem;
       }
     }
 
     &-item:hover {
+      border-radius: 30px;
       background-color: $color-grey-light-2;
     }
 
